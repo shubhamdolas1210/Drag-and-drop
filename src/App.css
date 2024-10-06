@@ -1,0 +1,38 @@
+.builder-app {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  height: 100vh;
+  padding-top: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.sidebar {
+  width: 20%;
+  padding: 20px;
+  height: 80%;
+}
+
+.canvas {
+  width: 80%;
+  padding: 20px;
+}
+
+/* Media query for mobile devices (less than 768px) */
+@media (max-width: 768px) {
+  .builder-app {
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .canvas {
+    width: 100%;
+    padding: 10px;
+  }
+}
